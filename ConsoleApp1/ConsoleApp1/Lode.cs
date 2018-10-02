@@ -20,6 +20,7 @@ namespace ConsoleApp1
             GenerateBitevnik();
             GenerateLetadlova();
             GenerateHydroplan();
+            GenerateParnik();
         }
 
 
@@ -485,6 +486,166 @@ namespace ConsoleApp1
             });
 
             Lod lod = new Lod("Hydroplán", pivot, LodObsah1, LodObsah2, LodObsah3, LodObsah4);
+
+            TemplateShips.Add(lod);
+        }
+        public void GenerateParnik()
+        {
+            Position pivot = new Position()
+            {
+                PosX = 2,
+                PosY = 2
+            };
+
+            List<Position> LodObsah1 = new List<Position>();
+            LodObsah1.Add(new Position
+            {
+                PosX = -1,
+                PosY = -2
+            });
+            LodObsah1.Add(new Position
+            {
+                PosX = -3,
+                PosY = -2
+            });
+            LodObsah1.Add(new Position
+            {
+                PosX = 0,
+                PosY = -1
+            });
+            LodObsah1.Add(new Position
+            {
+                PosX = -1,
+                PosY = -1
+            });
+            LodObsah1.Add(new Position
+            {
+                PosX = -2,
+                PosY = -1
+            });
+            LodObsah1.Add(new Position
+            {
+                PosX = -3,
+                PosY = -1
+            });
+            LodObsah1.Add(new Position
+            {
+                PosX = -4,
+                PosY = -1
+            });
+
+            List<Position> LodObsah2 = new List<Position>();
+            LodObsah2.Add(new Position
+            {
+                PosX = -1,
+                PosY = -0
+            });
+            LodObsah2.Add(new Position
+            {
+                PosX = -1,
+                PosY = -1
+            });
+            LodObsah2.Add(new Position
+            {
+                PosX = 0,
+                PosY = -1
+            });
+            LodObsah2.Add(new Position
+            {
+                PosX = -1,
+                PosY = -2
+            });
+            LodObsah2.Add(new Position
+            {
+                PosX = -1,
+                PosY = -3
+            });
+            LodObsah2.Add(new Position
+            {
+                PosX = 0,
+                PosY = -3
+            });
+            LodObsah2.Add(new Position
+            {
+                PosX = -1,
+                PosY = -4
+            });
+
+            List<Position> LodObsah3 = new List<Position>();
+            LodObsah3.Add(new Position
+            {
+                PosX = -1,
+                PosY = 0
+            });
+            LodObsah3.Add(new Position
+            {
+                PosX = -3,
+                PosY = 0
+            });
+            LodObsah3.Add(new Position
+            {
+                PosX = 0,
+                PosY = -1
+            });
+            LodObsah3.Add(new Position
+            {
+                PosX = -1,
+                PosY = -1
+            });
+            LodObsah3.Add(new Position
+            {
+                PosX = -2,
+                PosY = -1
+            });
+            LodObsah3.Add(new Position
+            {
+                PosX = -3,
+                PosY = -1
+            });
+            LodObsah3.Add(new Position
+            {
+                PosX = -4,
+                PosY = -1
+            });
+
+            List<Position> LodObsah4 = new List<Position>();
+            LodObsah4.Add(new Position
+            {
+                PosX = -1,
+                PosY = -0
+            });
+            LodObsah4.Add(new Position
+            {
+                PosX = -1,
+                PosY = -1
+            });
+            LodObsah4.Add(new Position
+            {
+                PosX = -2,
+                PosY = -1
+            });
+            LodObsah4.Add(new Position
+            {
+                PosX = -1,
+                PosY = -2
+            });
+            LodObsah4.Add(new Position
+            {
+                PosX = -1,
+                PosY = -3
+            });
+            LodObsah4.Add(new Position
+            {
+                PosX = -2,
+                PosY = -3
+            });
+            LodObsah4.Add(new Position
+            {
+                PosX = -1,
+                PosY = -4
+            });
+
+            Lod lod = new Lod("Parník", pivot, LodObsah1, LodObsah2, LodObsah3, LodObsah4);
 
             TemplateShips.Add(lod);
         }
